@@ -5,16 +5,16 @@
     
     node class
     ```js
-    class Node{
-      constructor(data,next=null){
-        this.data=data;
-        this.next=next;
-      }
-    }
+   class Node{
+              constructor(data,next=null){
+                this.data=data;
+                this.next=next;
+              }
+        }
     ```
-linkedlist class
+ linkedlist class
    ```js
-    class Linkedlist{
+        class Linkedlist{
       constructor(){
         this.head=null;
         this.size=0;
