@@ -22,28 +22,28 @@
    ```
   // 1 insert at the beginning
   ```js
-  insertAtBeginning(data){
-    this.head=new Node(data,this.head);
-    this.size++;
-  }
+      insertAtBeginning(data){
+        this.head=new Node(data,this.head);
+        this.size++;
+      }
   ```
   // 2 insert at the end
-  ```js
-  insertAtEnd(data){
-    let node=new Node(data);
-    let current=this.head;
-    if(!current){
-      this.head=node;
-      this.size++;
-    }else{
-      while(current.next){
-        current=current.next;
+   ```js
+      insertAtEnd(data){
+        let node=new Node(data);
+        let current=this.head;
+        if(!current){
+          this.head=node;
+          this.size++;
+        }else{
+          while(current.next){
+            current=current.next;
+          }
+          current.next=node;
+          this.size++;
+        }
       }
-      current.next=node;
-      this.size++;
-    }
-  }
-```
+   ```
   // 3 insert at a particular position
   ```js
   insertAtPosition(data,index){
