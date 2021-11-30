@@ -4,12 +4,13 @@
     here we create a class of linked list which containe all opertions like create,delete,find,revers etc ..
     ```js
     class Node{
-  constructor(data,next=null){
-    this.data=data;
-    this.next=next;
-  }
-}
-
+      constructor(data,next=null){
+        this.data=data;
+        this.next=next;
+      }
+    }
+```
+```js
 class Linkedlist{
   constructor(){
     this.head=null;
@@ -17,14 +18,16 @@ class Linkedlist{
   }
 
   // 1 insert at the beginning
+  ```js
   insertAtBeginning(data){
     this.head=new Node(data,this.head);
     this.size++;
   }
+  ```
   // 2 insert at the end
+  ```js
   insertAtEnd(data){
     let node=new Node(data);
-    //  check if list is empty
     let current=this.head;
     if(!current){
       this.head=node;
@@ -37,14 +40,15 @@ class Linkedlist{
       this.size++;
     }
   }
-
+```
   // 3 insert at a particular position
+  ```js
   insertAtPosition(data,index){
-    // if index out of bound
+
     if(index>0&&index>this.size){
       return;
     }
-    // if index is 0
+  
     if(index===0){
       this.insertAtBeginning(data);
       return;
@@ -55,15 +59,18 @@ class Linkedlist{
     let counter=0;
     current=this.head;
     while(counter<index){
-     previous=current; //the previous node before the index
+     previous=current; 
      counter++;
-     current=current.next; //the current node after the index
+     current=current.next; 
     }
     node.next=current;
     previous.next=node;
     this.size++;
   }
+  ```
+ 
   // 4 get at index
+   ```js
   getDataAtIndex(index){
     let current=this.head;
     let counter=0;
@@ -78,7 +85,9 @@ class Linkedlist{
     }
     return temp;
   }
+   ```
   // 5 Remove at index
+   ```js
   removeAtIndex(index){
     if(index>0&&index>this.size){
       return;
@@ -98,7 +107,10 @@ class Linkedlist{
     }
     this.size--;
   }
+   ```
+   
   // 6 Clear list
+   ```js
   clearList(){
     this.head=null;
     this.size=0;
@@ -111,7 +123,9 @@ class Linkedlist{
       current=current.next;
     }
   }
+   ```
   // 8 reverse list
+   ```js
   reverse() {
     if (!this.head) return; 
     let current = this.head;
@@ -122,7 +136,7 @@ class Linkedlist{
     }
     this.head = linkedList.head;
 }
-
-
+ ```
+ ```js
 }
     ```
