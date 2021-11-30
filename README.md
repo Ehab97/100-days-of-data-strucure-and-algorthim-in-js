@@ -6,12 +6,12 @@
     node class
     ```js
    class Node{
-              constructor(data,next=null){
-                this.data=data;
-                this.next=next;
-              }
-        }
-    ```
+      constructor(data,next=null){
+        this.data=data;
+        this.next=next;
+      }
+     }
+   ```
  linkedlist class
    ```js
         class Linkedlist{
