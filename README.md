@@ -2,6 +2,8 @@
 
 ## 1- linked list
     here we create a class of linked list which containe all opertions like create,delete,find,revers etc ..
+    
+    node class
     ```js
     class Node{
       constructor(data,next=null){
@@ -10,13 +12,14 @@
       }
     }
 ```
+linkedlist class
 ```js
 class Linkedlist{
   constructor(){
     this.head=null;
     this.size=0;
   }
-
+```
   // 1 insert at the beginning
   ```js
   insertAtBeginning(data){
