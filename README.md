@@ -13,7 +13,7 @@
          }
     ```
  linkedlist class
-    ```js
+   ```js
     class Linkedlist{
       constructor(){
             this.head=null;
