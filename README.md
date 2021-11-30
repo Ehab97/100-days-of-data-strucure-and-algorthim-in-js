@@ -5,19 +5,19 @@
     
     node class
     ```js
-   class Node{
-      constructor(data,next=null){
-        this.data=data;
-        this.next=next;
-      }
-     }
-   ```
+       class Node{
+          constructor(data,next=null){
+            this.data=data;
+            this.next=next;
+          }
+         }
+    ```
  linkedlist class
-   ```js
-        class Linkedlist{
+    ```js
+    class Linkedlist{
       constructor(){
-        this.head=null;
-        this.size=0;
+            this.head=null;
+            this.size=0;
       }
    ```
   // 1 insert at the beginning
@@ -127,7 +127,7 @@
     }
   }
    ```
-  // 8 reverse list
+  // 7 reverse list
    ```js
   reverse() {
     if (!this.head) return; 
