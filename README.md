@@ -11,15 +11,15 @@
         this.next=next;
       }
     }
-```
+    ```
 linkedlist class
-```js
-class Linkedlist{
-  constructor(){
-    this.head=null;
-    this.size=0;
-  }
-```
+   ```js
+    class Linkedlist{
+      constructor(){
+        this.head=null;
+        this.size=0;
+      }
+   ```
   // 1 insert at the beginning
   ```js
   insertAtBeginning(data){
