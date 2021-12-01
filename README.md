@@ -168,4 +168,40 @@ here we use binay search on sorted data to find iten in the data in O(logn)
          }
          return 'not Found'
     }
-```    
+```  
+
+## 3 Selection sort
+ is the simplest sort alogrthim but also it's lowest it's take o(n^2)
+ normal way
+ ```js
+     const selectionSort=(arr)=>{
+      for(let i=0;i<arr.length;i++){
+        let min=i;
+        for(let j=i+1;j<arr.length;j++){
+            if(arr[j]<arr[min]){
+              min=j;
+            }
+        }
+        let temp=arr[i];
+        arr[i]=arr[min];
+        arr[min]=temp;
+      }
+      return arr;
+    }
+ ```
+ in elquant way
+ ```js
+     const selectionSortEloquent=(arr)=>{
+      arr.forEach((_value,index,array) => {
+        const smallest=Math.min(...array.slice(index));
+        const smallestIndex=array.indexOf(smallest);
+        if(arr[index]>arr[smallestIndex]){
+          let temp=arr[index];
+          arr[index]=arr[smallestIndex];
+          arr[smallestIndex]=temp;
+        }
+      });
+      return arr;
+    }
+ ```
+ 
