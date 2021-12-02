@@ -216,13 +216,14 @@ here we use binay search on sorted data to find iten in the data in O(logn)
               }
               return fibonacciRecursion(target-1)+fibonacciRecursion(target-2);
            }
-
+    ```
+    ```js
         const factorialRecursion=(n)=>{
           if(n<2)return 1;
           return n*factorialRecursion(n-1);
         }
-
-
+    ```
+    ```js
         const powRecursion=(base,exp)=>{
           if(exp==0)return 1;
           return base*powRecursion(base,exp-1);
