@@ -1,9 +1,8 @@
 # 100-days-of-data-strucure-and-algorthim-in-js
 
 ## 1- linked list
-    here we create a class of linked list which containe all opertions like create,delete,find,revers etc ..
+###### here we create a class of linked list which containe all opertions like create,delete,find,revers etc ..
     
-    node class
     ```js
        class Node{
           constructor(data,next=null){
@@ -205,9 +204,9 @@ here we use binay search on sorted data to find iten in the data in O(logn)
  ```
 
  ## 4 Recursion
- is to call the function inside it self to make loop and it stop based on if it's the base case or recsive case
-    let's code
-        Here we could use recursion to solve problem like fibonacci number of factorial or create pow for math
+   ######  is to call the function inside it self to make loop and it stop based on if it's the base case or recsive case
+   ###### let's code
+   ###### Here we could use recursion to solve problem like fibonacci number of factorial or create pow for math
      ```js
          const fibonacciRecursion=(target)=>{
               if(target<2){
@@ -230,7 +229,7 @@ here we use binay search on sorted data to find iten in the data in O(logn)
      ```
 
 ## 5-Stack
-   is to save data in top of each other in that first in last out FILO or last in first out LIFO
+   ###### is to save data in top of each other in that first in last out FILO or last in first out LIFO
        ```js
             class Stack{
               constructor(){
