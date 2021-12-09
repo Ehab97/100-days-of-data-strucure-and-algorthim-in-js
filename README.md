@@ -20,14 +20,14 @@
             this.size=0;
       }
    ```
-  // 1 insert at the beginning
+   1 insert at the beginning
   ```js
       insertAtBeginning(data){
         this.head=new Node(data,this.head);
         this.size++;
       }
   ```
-  // 2 insert at the end
+   2 insert at the end
    ```js
       insertAtEnd(data){
         let node=new Node(data);
@@ -44,35 +44,34 @@
         }
       }
    ```
-  // 3 insert at a particular position
+   3 insert at a particular position
   ```js
-  insertAtPosition(data,index){
+      insertAtPosition(data,index){
 
-    if(index>0&&index>this.size){
-      return;
-    }
-  
-    if(index===0){
-      this.insertAtBeginning(data);
-      return;
-    }
+        if(index>0&&index>this.size){
+          return;
+        }
 
-    let node=new Node(data);
-    let current,previous;
-    let counter=0;
-    current=this.head;
-    while(counter<index){
-     previous=current; 
-     counter++;
-     current=current.next; 
-    }
-    node.next=current;
-    previous.next=node;
-    this.size++;
-  }
+        if(index===0){
+          this.insertAtBeginning(data);
+          return;
+        }
+
+        let node=new Node(data);
+        let current,previous;
+        let counter=0;
+        current=this.head;
+        while(counter<index){
+         previous=current; 
+         counter++;
+         current=current.next; 
+        }
+        node.next=current;
+        previous.next=node;
+        this.size++;
+      }
   ```
- 
-  // 4 get at index
+   4 get at index
    ```js
   getDataAtIndex(index){
     let current=this.head;
@@ -89,7 +88,7 @@
     return temp;
   }
    ```
-  // 5 Remove at index
+  5 Remove at index
    ```js
   removeAtIndex(index){
     if(index>0&&index>this.size){
@@ -112,13 +111,15 @@
   }
    ```
    
-  // 6 Clear list
+   6 Clear list
    ```js
   clearList(){
     this.head=null;
     this.size=0;
   }
-  // 7 print list
+  ```
+   7 print list
+   ```js
   printData(){
     let current=this.head;
     while(current){
@@ -127,22 +128,20 @@
     }
   }
    ```
-  // 7 reverse list
+   7 reverse list
    ```js
-  reverse() {
-    if (!this.head) return; 
-    let current = this.head;
-    const linkedList = new Linkedlist(); 
-    while (current) { 
-        linkedList.insertAtBeginning(current.data); 
-        current = current.next;
+      reverse() {
+        if (!this.head) return; 
+        let current = this.head;
+        const linkedList = new Linkedlist(); 
+        while (current) { 
+            linkedList.insertAtBeginning(current.data); 
+            current = current.next;
+        }
+        this.head = linkedList.head;
     }
-    this.head = linkedList.head;
-}
  ```
- ```js
-}
-    ```
+
 
 ##2 binay search
 
