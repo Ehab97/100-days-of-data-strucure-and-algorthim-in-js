@@ -2,16 +2,15 @@
 
 ## 1- linked list
 ###### here we create a class of linked list which containe all opertions like create,delete,find,revers etc ..
-    
     ```js
-       class Node{
+     class Node{
           constructor(data,next=null){
             this.data=data;
             this.next=next;
           }
          }
     ```
- linkedlist class
+linkedlist class
    ```js
     class Linkedlist{
       constructor(){
@@ -207,7 +206,7 @@
    ######  is to call the function inside it self to make loop and it stop based on if it's the base case or recsive case
    ###### let's code
    ###### Here we could use recursion to solve problem like fibonacci number of factorial or create pow for math
-     ```js
+    ```js
       const fibonacciRecursion=(target)=>{
               if(target<2){
                 return target;
@@ -223,7 +222,6 @@
           return base*powRecursion(base,exp-1);
         }
      ```
-
 ## 5-Stack
    ###### is to save data in top of each other in that first in last out FILO or last in first out LIFO
   ```js
