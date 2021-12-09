@@ -203,9 +203,9 @@ here we use binay search on sorted data to find iten in the data in O(logn)
       return arr;
     }
  ```
+
  ## 4 Recursion
-    is to call the function inside it self to make loop and it stop based on if it's the base case or recsive case
-    
+ is to call the function inside it self to make loop and it stop based on if it's the base case or recsive case
     let's code
         Here we could use recursion to solve problem like fibonacci number of factorial or create pow for math
      ```js
@@ -230,7 +230,7 @@ here we use binay search on sorted data to find iten in the data in O(logn)
      ```
 
 ## 5-Stack
-    is to save data in top of each other in that first in last out FILO or last in first out LIFO
+   is to save data in top of each other in that first in last out FILO or last in first out LIFO
        ```js
             class Stack{
               constructor(){
