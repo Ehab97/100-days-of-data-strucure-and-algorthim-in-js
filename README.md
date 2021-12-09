@@ -43,7 +43,7 @@
         }
       }
    ```
-   3 insert at a particular position
+ ####   3 insert at a particular position
   ```js
       insertAtPosition(data,index){
 
@@ -70,7 +70,7 @@
         this.size++;
       }
   ```
-   4 get at index
+ ####  4 get at index
    ```js
   getDataAtIndex(index){
     let current=this.head;
@@ -87,7 +87,7 @@
     return temp;
   }
    ```
-  5 Remove at index
+####  5 Remove at index
    ```js
   removeAtIndex(index){
     if(index>0&&index>this.size){
@@ -110,14 +110,14 @@
   }
    ```
    
-   6 Clear list
+####   6 Clear list
    ```js
   clearList(){
     this.head=null;
     this.size=0;
   }
   ```
-   7 print list
+####   7 print list
    ```js
   printData(){
     let current=this.head;
@@ -127,7 +127,7 @@
     }
   }
    ```
-   7 reverse list
+####   7 reverse list
    ```js
       reverse() {
         if (!this.head) return; 
@@ -144,7 +144,7 @@
 
 ##2 binay search
 
-here we use binay search on sorted data to find iten in the data in O(logn)
+#### here we use binay search on sorted data to find iten in the data in O(logn)
 
 ```js
     const binarySearch=(arr,item)=>{
@@ -169,8 +169,8 @@ here we use binay search on sorted data to find iten in the data in O(logn)
 ```  
 
 ## 3 Selection sort
- is the simplest sort alogrthim but also it's lowest it's take o(n^2)
- normal way
+ #### is the simplest sort alogrthim but also it's lowest it's take o(n^2)
+ ##### normal way
  ```js
      const selectionSort=(arr)=>{
       for(let i=0;i<arr.length;i++){
@@ -187,7 +187,7 @@ here we use binay search on sorted data to find iten in the data in O(logn)
       return arr;
     }
  ```
- in elquant way
+##### in elquant way
  ```js
      const selectionSortEloquent=(arr)=>{
       arr.forEach((_value,index,array) => {
@@ -230,8 +230,8 @@ here we use binay search on sorted data to find iten in the data in O(logn)
 
 ## 5-Stack
    ###### is to save data in top of each other in that first in last out FILO or last in first out LIFO
-       ```js
-            class Stack{
+  ```js
+    class Stack{
               constructor(){
                 this.items = [];
                 this.count = 0;
