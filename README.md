@@ -273,11 +273,13 @@ linkedlist class
               }
         }
     ```
-  ## 6-Quick stort
-    ######     quick sort is one of the fatest algortim for sort
-    ######    it's baed on Divide and Conqer teqnquieqs  it's take O(nlogn)
-     ```js
-            const quickSort=(array)=>{
+    
+   
+ ## 6-Quick stort
+   ######     quick sort is one of the fatest algortim for sort
+   ######    it's baed on Divide and Conqer teqnquieqs  it's take O(nlogn)
+   ```js
+   const quickSort=(array)=>{
                   if(array.length<=1) return array;
                   else{
                     let pivotIndex=Math.floor(array.length/2);
