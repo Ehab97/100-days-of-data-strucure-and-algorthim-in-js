@@ -273,3 +273,25 @@ linkedlist class
               }
         }
     ```
+  ## 6-Quick stort
+    ######     quick sort is one of the fatest algortim for sort
+    ######    it's baed on Divide and Conqer teqnquieqs  it's take O(nlogn)
+     ```js
+            const quickSort=(array)=>{
+                  if(array.length<=1) return array;
+                  else{
+                    let pivotIndex=Math.floor(array.length/2);
+                    let pivot=array[pivotIndex];
+                    let left=[];
+                    let right=[];
+                    for(let i=0;i<array.length;i++){
+                        if(array[i]<=pivot&&i!=pivotIndex){
+                          left.push(array[i])
+                        }else if((array[i]>pivot)){
+                          right.push(array[i])
+                        }
+                    }
+                    return [...quickSort(left),pivot,...quickSort(right)]
+                  }
+              }
+        ```
